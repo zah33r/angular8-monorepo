@@ -120,6 +120,124 @@
           }
         }
       }
+    },
+    "mircoApp2": {
+      "projectType": "application",
+      "schematics": {},
+      "root": "projects/mircoApp2",
+      "sourceRoot": "projects/mircoApp2/src",
+      "prefix": "app",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-angular:browser",
+          "options": {
+            "outputPath": "dist/mircoApp2",
+            "index": "projects/mircoApp2/src/index.html",
+            "main": "projects/mircoApp2/src/main.ts",
+            "polyfills": "projects/mircoApp2/src/polyfills.ts",
+            "tsConfig": "projects/mircoApp2/tsconfig.app.json",
+            "aot": false,
+            "assets": [
+              "projects/mircoApp2/src/favicon.ico",
+              "projects/mircoApp2/src/assets"
+            ],
+            "styles": [
+              "projects/mircoApp2/src/styles.css"
+            ],
+            "scripts": []
+          },
+          "configurations": {
+            "production": {
+              "fileReplacements": [
+                {
+                  "replace": "projects/mircoApp2/src/environments/environment.ts",
+                  "with": "projects/mircoApp2/src/environments/environment.prod.ts"
+                }
+              ],
+              "optimization": true,
+              "outputHashing": "all",
+              "sourceMap": false,
+              "extractCss": true,
+              "namedChunks": false,
+              "aot": true,
+              "extractLicenses": true,
+              "vendorChunk": false,
+              "buildOptimizer": true,
+              "budgets": [
+                {
+                  "type": "initial",
+                  "maximumWarning": "2mb",
+                  "maximumError": "5mb"
+                },
+                {
+                  "type": "anyComponentStyle",
+                  "maximumWarning": "6kb",
+                  "maximumError": "10kb"
+                }
+              ]
+            }
+          }
+        },
+        "serve": {
+          "builder": "@angular-devkit/build-angular:dev-server",
+          "options": {
+            "browserTarget": "mircoApp2:build"
+          },
+          "configurations": {
+            "production": {
+              "browserTarget": "mircoApp2:build:production"
+            }
+          }
+        },
+        "extract-i18n": {
+          "builder": "@angular-devkit/build-angular:extract-i18n",
+          "options": {
+            "browserTarget": "mircoApp2:build"
+          }
+        },
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "main": "projects/mircoApp2/src/test.ts",
+            "polyfills": "projects/mircoApp2/src/polyfills.ts",
+            "tsConfig": "projects/mircoApp2/tsconfig.spec.json",
+            "karmaConfig": "projects/mircoApp2/karma.conf.js",
+            "assets": [
+              "projects/mircoApp2/src/favicon.ico",
+              "projects/mircoApp2/src/assets"
+            ],
+            "styles": [
+              "projects/mircoApp2/src/styles.css"
+            ],
+            "scripts": []
+          }
+        },
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "tsConfig": [
+              "projects/mircoApp2/tsconfig.app.json",
+              "projects/mircoApp2/tsconfig.spec.json",
+              "projects/mircoApp2/e2e/tsconfig.json"
+            ],
+            "exclude": [
+              "**/node_modules/**"
+            ]
+          }
+        },
+        "e2e": {
+          "builder": "@angular-devkit/build-angular:protractor",
+          "options": {
+            "protractorConfig": "projects/mircoApp2/e2e/protractor.conf.js",
+            "devServerTarget": "mircoApp2:serve"
+          },
+          "configurations": {
+            "production": {
+              "devServerTarget": "mircoApp2:serve:production"
+            }
+          }
+        }
+      }
     }},
-  "defaultProject": "mircoApp1"
+  "defaultProject": "mircoApp2"
 }
