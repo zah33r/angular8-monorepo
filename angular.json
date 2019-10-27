@@ -32,8 +32,8 @@
             "production": {
               "fileReplacements": [
                 {
-                  "replace": "projects/mircoApp1/src/environments/environment.ts",
-                  "with": "projects/mircoApp1/src/environments/environment.prod.ts"
+                  "replace": "projects/mircoApp1/src/environments/environment.microapp1.ts",
+                  "with": "projects/mircoApp1/src/environments/environment.microapp1.prod.ts"
                 }
               ],
               "optimization": true,
