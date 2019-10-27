@@ -1,6 +1,8 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
+import { environment as microapp1ENV } from 'projects/mircoApp1/src/environments/environment.microapp1';
 
+microapp1ENV.standalone = false;
 
 const routes: Routes = [
   {

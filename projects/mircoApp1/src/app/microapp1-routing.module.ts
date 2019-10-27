@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 import { FeatureAComponent } from './feature-a/feature-a.component';
+import { environment } from '../environments/environment.microapp1';
 
 
 const microApp1routes: Routes = [
@@ -8,7 +9,7 @@ const microApp1routes: Routes = [
 ];
 
 @NgModule({
-  imports: [RouterModule.forChild(microApp1routes)],
+  imports: [environment.standalone ? RouterModule.forRoot(microApp1routes) : RouterModule.forChild(microApp1routes)],
   exports: [RouterModule]
 })
 export class MicroApp1RoutingModule { }
