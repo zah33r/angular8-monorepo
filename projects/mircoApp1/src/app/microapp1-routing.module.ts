@@ -8,7 +8,7 @@ const microApp1routes: Routes = [
 ];
 
 @NgModule({
-  imports: [RouterModule.forRoot(microApp1routes)],
+  imports: [RouterModule.forChild(microApp1routes)],
   exports: [RouterModule]
 })
 export class MicroApp1RoutingModule { }

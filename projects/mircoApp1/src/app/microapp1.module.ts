@@ -4,13 +4,15 @@ import { NgModule } from '@angular/core';
 import { MicroApp1RoutingModule } from './microapp1-routing.module';
 import { MicroApp1Component } from './microapp1.component';
 import { FeatureAModule } from './feature-a/feature-a.module';
+import { CommonModule } from '@angular/common';
 
 @NgModule({
   declarations: [
     MicroApp1Component,
   ],
   imports: [
-    BrowserModule,
+    // BrowserModule,
+    CommonModule,
     MicroApp1RoutingModule,
     FeatureAModule
   ],
