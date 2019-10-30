@@ -6,5 +6,5 @@ import { Component } from '@angular/core';
   styleUrls: ['./microapp1.component.css']
 })
 export class MicroApp1Component {
-  title = 'mircoApp1';
+  title = 'microApp1';
 }

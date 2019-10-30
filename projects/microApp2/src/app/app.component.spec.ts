@@ -1,6 +1,6 @@
 import { TestBed, async } from '@angular/core/testing';
 import { RouterTestingModule } from '@angular/router/testing';
-import { MicroApp1Component } from './microapp1.component';
+import { AppComponent } from './app.component';
 
 describe('AppComponent', () => {
   beforeEach(async(() => {
@@ -9,27 +9,27 @@ describe('AppComponent', () => {
         RouterTestingModule
       ],
       declarations: [
-        MicroApp1Component
+        AppComponent
       ],
     }).compileComponents();
   }));
 
   it('should create the app', () => {
-    const fixture = TestBed.createComponent(MicroApp1Component);
+    const fixture = TestBed.createComponent(AppComponent);
     const app = fixture.debugElement.componentInstance;
     expect(app).toBeTruthy();
   });
 
-  it(`should have as title 'mircoApp1'`, () => {
-    const fixture = TestBed.createComponent(MicroApp1Component);
+  it(`should have as title 'microApp2'`, () => {
+    const fixture = TestBed.createComponent(AppComponent);
     const app = fixture.debugElement.componentInstance;
-    expect(app.title).toEqual('mircoApp1');
+    expect(app.title).toEqual('microApp2');
   });
 
   it('should render title', () => {
-    const fixture = TestBed.createComponent(MicroApp1Component);
+    const fixture = TestBed.createComponent(AppComponent);
     fixture.detectChanges();
     const compiled = fixture.debugElement.nativeElement;
-    expect(compiled.querySelector('.content span').textContent).toContain('mircoApp1 app is running!');
+    expect(compiled.querySelector('.content span').textContent).toContain('microApp2 app is running!');
   });
 });

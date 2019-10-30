@@ -3,28 +3,28 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "mircoApp1": {
+    "microApp1": {
       "projectType": "application",
       "schematics": {},
-      "root": "projects/mircoApp1",
-      "sourceRoot": "projects/mircoApp1/src",
+      "root": "projects/microApp1",
+      "sourceRoot": "projects/microApp1/src",
       "prefix": "app",
       "architect": {
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/mircoApp1",
-            "index": "projects/mircoApp1/src/index.html",
-            "main": "projects/mircoApp1/src/main.ts",
-            "polyfills": "projects/mircoApp1/src/polyfills.ts",
-            "tsConfig": "projects/mircoApp1/tsconfig.app.json",
+            "outputPath": "dist/microApp1",
+            "index": "projects/microApp1/src/index.html",
+            "main": "projects/microApp1/src/main.ts",
+            "polyfills": "projects/microApp1/src/polyfills.ts",
+            "tsConfig": "projects/microApp1/tsconfig.app.json",
             "aot": false,
             "assets": [
-              "projects/mircoApp1/src/favicon.ico",
-              "projects/mircoApp1/src/assets"
+              "projects/microApp1/src/favicon.ico",
+              "projects/microApp1/src/assets"
             ],
             "styles": [
-              "projects/mircoApp1/src/styles.css"
+              "projects/microApp1/src/styles.css"
             ],
             "scripts": []
           },
@@ -32,8 +32,8 @@
             "production": {
               "fileReplacements": [
                 {
-                  "replace": "projects/mircoApp1/src/environments/environment.microapp1.ts",
-                  "with": "projects/mircoApp1/src/environments/environment.microapp1.prod.ts"
+                  "replace": "projects/microApp1/src/environments/environment.microapp1.ts",
+                  "with": "projects/microApp1/src/environments/environment.microapp1.prod.ts"
                 }
               ],
               "optimization": true,
@@ -63,33 +63,33 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "mircoApp1:build"
+            "browserTarget": "microApp1:build"
           },
           "configurations": {
             "production": {
-              "browserTarget": "mircoApp1:build:production"
+              "browserTarget": "microApp1:build:production"
             }
           }
         },
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "mircoApp1:build"
+            "browserTarget": "microApp1:build"
           }
         },
         "test": {
           "builder": "@angular-devkit/build-angular:karma",
           "options": {
-            "main": "projects/mircoApp1/src/test.ts",
-            "polyfills": "projects/mircoApp1/src/polyfills.ts",
-            "tsConfig": "projects/mircoApp1/tsconfig.spec.json",
-            "karmaConfig": "projects/mircoApp1/karma.conf.js",
+            "main": "projects/microApp1/src/test.ts",
+            "polyfills": "projects/microApp1/src/polyfills.ts",
+            "tsConfig": "projects/microApp1/tsconfig.spec.json",
+            "karmaConfig": "projects/microApp1/karma.conf.js",
             "assets": [
-              "projects/mircoApp1/src/favicon.ico",
-              "projects/mircoApp1/src/assets"
+              "projects/microApp1/src/favicon.ico",
+              "projects/microApp1/src/assets"
             ],
             "styles": [
-              "projects/mircoApp1/src/styles.css"
+              "projects/microApp1/src/styles.css"
             ],
             "scripts": []
           }
@@ -98,9 +98,9 @@
           "builder": "@angular-devkit/build-angular:tslint",
           "options": {
             "tsConfig": [
-              "projects/mircoApp1/tsconfig.app.json",
-              "projects/mircoApp1/tsconfig.spec.json",
-              "projects/mircoApp1/e2e/tsconfig.json"
+              "projects/microApp1/tsconfig.app.json",
+              "projects/microApp1/tsconfig.spec.json",
+              "projects/microApp1/e2e/tsconfig.json"
             ],
             "exclude": [
               "**/node_modules/**"
@@ -110,39 +110,39 @@
         "e2e": {
           "builder": "@angular-devkit/build-angular:protractor",
           "options": {
-            "protractorConfig": "projects/mircoApp1/e2e/protractor.conf.js",
-            "devServerTarget": "mircoApp1:serve"
+            "protractorConfig": "projects/microApp1/e2e/protractor.conf.js",
+            "devServerTarget": "microApp1:serve"
           },
           "configurations": {
             "production": {
-              "devServerTarget": "mircoApp1:serve:production"
+              "devServerTarget": "microApp1:serve:production"
             }
           }
         }
       }
     },
-    "mircoApp2": {
+    "microApp2": {
       "projectType": "application",
       "schematics": {},
-      "root": "projects/mircoApp2",
-      "sourceRoot": "projects/mircoApp2/src",
+      "root": "projects/microApp2",
+      "sourceRoot": "projects/microApp2/src",
       "prefix": "app",
       "architect": {
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/mircoApp2",
-            "index": "projects/mircoApp2/src/index.html",
-            "main": "projects/mircoApp2/src/main.ts",
-            "polyfills": "projects/mircoApp2/src/polyfills.ts",
-            "tsConfig": "projects/mircoApp2/tsconfig.app.json",
+            "outputPath": "dist/microApp2",
+            "index": "projects/microApp2/src/index.html",
+            "main": "projects/microApp2/src/main.ts",
+            "polyfills": "projects/microApp2/src/polyfills.ts",
+            "tsConfig": "projects/microApp2/tsconfig.app.json",
             "aot": false,
             "assets": [
-              "projects/mircoApp2/src/favicon.ico",
-              "projects/mircoApp2/src/assets"
+              "projects/microApp2/src/favicon.ico",
+              "projects/microApp2/src/assets"
             ],
             "styles": [
-              "projects/mircoApp2/src/styles.css"
+              "projects/microApp2/src/styles.css"
             ],
             "scripts": []
           },
@@ -150,8 +150,8 @@
             "production": {
               "fileReplacements": [
                 {
-                  "replace": "projects/mircoApp2/src/environments/environment.ts",
-                  "with": "projects/mircoApp2/src/environments/environment.prod.ts"
+                  "replace": "projects/microApp2/src/environments/environment.ts",
+                  "with": "projects/microApp2/src/environments/environment.prod.ts"
                 }
               ],
               "optimization": true,
@@ -181,33 +181,33 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "mircoApp2:build"
+            "browserTarget": "microApp2:build"
           },
           "configurations": {
             "production": {
-              "browserTarget": "mircoApp2:build:production"
+              "browserTarget": "microApp2:build:production"
             }
           }
         },
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "mircoApp2:build"
+            "browserTarget": "microApp2:build"
           }
         },
         "test": {
           "builder": "@angular-devkit/build-angular:karma",
           "options": {
-            "main": "projects/mircoApp2/src/test.ts",
-            "polyfills": "projects/mircoApp2/src/polyfills.ts",
-            "tsConfig": "projects/mircoApp2/tsconfig.spec.json",
-            "karmaConfig": "projects/mircoApp2/karma.conf.js",
+            "main": "projects/microApp2/src/test.ts",
+            "polyfills": "projects/microApp2/src/polyfills.ts",
+            "tsConfig": "projects/microApp2/tsconfig.spec.json",
+            "karmaConfig": "projects/microApp2/karma.conf.js",
             "assets": [
-              "projects/mircoApp2/src/favicon.ico",
-              "projects/mircoApp2/src/assets"
+              "projects/microApp2/src/favicon.ico",
+              "projects/microApp2/src/assets"
             ],
             "styles": [
-              "projects/mircoApp2/src/styles.css"
+              "projects/microApp2/src/styles.css"
             ],
             "scripts": []
           }
@@ -216,9 +216,9 @@
           "builder": "@angular-devkit/build-angular:tslint",
           "options": {
             "tsConfig": [
-              "projects/mircoApp2/tsconfig.app.json",
-              "projects/mircoApp2/tsconfig.spec.json",
-              "projects/mircoApp2/e2e/tsconfig.json"
+              "projects/microApp2/tsconfig.app.json",
+              "projects/microApp2/tsconfig.spec.json",
+              "projects/microApp2/e2e/tsconfig.json"
             ],
             "exclude": [
               "**/node_modules/**"
@@ -228,12 +228,12 @@
         "e2e": {
           "builder": "@angular-devkit/build-angular:protractor",
           "options": {
-            "protractorConfig": "projects/mircoApp2/e2e/protractor.conf.js",
-            "devServerTarget": "mircoApp2:serve"
+            "protractorConfig": "projects/microApp2/e2e/protractor.conf.js",
+            "devServerTarget": "microApp2:serve"
           },
           "configurations": {
             "production": {
-              "devServerTarget": "mircoApp2:serve:production"
+              "devServerTarget": "microApp2:serve:production"
             }
           }
         }
