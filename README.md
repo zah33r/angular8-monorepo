@@ -1,4 +1,4 @@
-# FirstMonoRepo
+# Angular 8 Mono Repo Architecture for Angular Micro Apps
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.3.14.
 
