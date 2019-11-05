@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { GlobalSharedService } from 'projects/startup/src/app/app.component.service';
 
 @Component({
   selector: 'app-feature-a',
@@ -6,10 +7,12 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./feature-a.component.css']
 })
 export class FeatureAComponent implements OnInit {
+  valueFromShareService: string = '';
 
-  constructor() { }
+  constructor(private globalService: GlobalSharedService) { }
 
   ngOnInit() {
+    this.valueFromShareService = this.globalService.aSharedProperty;
   }
 
 }

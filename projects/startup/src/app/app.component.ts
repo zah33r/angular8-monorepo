@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { GlobalSharedService } from './app.component.service';
 
 @Component({
   selector: 'app-root',
@@ -7,4 +8,7 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'startup';
+  constructor(service: GlobalSharedService) {
+    // this.title = service.aSharedProperty;
+  }
 }
