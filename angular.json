@@ -270,17 +270,21 @@
                 {
                   "replace": "projects/startup/src/environments/environment.ts",
                   "with": "projects/startup/src/environments/environment.prod.ts"
+                },
+                {
+                  "replace": "projects/microApp1/src/environments/environment.microapp1.ts",
+                  "with": "projects/microApp1/src/environments/environment.microapp1.hosted.ts"
                 }
               ],
               "optimization": true,
               "outputHashing": "all",
-              "sourceMap": false,
+              "sourceMap": true,
               "extractCss": true,
               "namedChunks": false,
-              "aot": false,
+              "aot": true,
               "extractLicenses": true,
               "vendorChunk": false,
-              "buildOptimizer": false,
+              "buildOptimizer": true,
               "budgets": [
                 {
                   "type": "initial",
